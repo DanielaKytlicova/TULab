@@ -136,23 +136,36 @@
       left: 0;
       background-color: #333;
       width: 100%;
-    }}
+    }
+.HAMBURGER{
+    display: none;
+}}
 
 /* MENU */
+
 .menu li {
     display: inline-block;
+
     }
 
     .MENU {
         background-color: black;
         border-radius: 20px;
+        margin: 10px;
     }
-   
+.MENU img{
+    position: static;
+    float: left; /* Zarovná obrázek vlevo */
+    margin-right: 10px; /* Pokud chcete přidat mezery mezi obrázkem a ostatním obsahem */
+
+}   
+
     .menu {
       text-align: right;
         margin-left: 250px;
         color: aliceblue;
         display: inline-flex;
+
     }
     
     
@@ -160,7 +173,7 @@
         display: inline-block;
         color: white;
         text-decoration: none;
-        padding: 20px 30px;
+        padding: 15px 15px;
     }
 
     .menu a:hover,
@@ -176,10 +189,10 @@
     
     }
     .menu img{
-        position: fixed;
-   
+       text-align: left;
+       
     }
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
         .menu {
           display: none;
           flex-direction: column;
@@ -191,7 +204,7 @@
         }}
 
     body{
-        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #bf00b2, #38032c);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
@@ -277,7 +290,7 @@
     background-color: #333;
   }
 
-
+/* VYBAVENI */
 
     .VYBAVENI img {
         width: 131.51px;
@@ -289,5 +302,16 @@
         padding: 20px;
     }
     
+.button{
+    border-radius: 20px;
+    background: #000;
+    color: #ffffff;
 
-    
+}
+
+  /* OTEVIRACI DOBA */  
+.oteviracidoba {
+    background-color: #dddddd44;
+    padding: 20px;
+
+}
