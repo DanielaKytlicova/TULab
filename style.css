@@ -11,7 +11,7 @@
   --hamburger-gap: 6px;
   --foreground: #ffffff;
   --background: rgb(0, 0, 0);
-  --hamburger-margin: 20px;
+  --hamburger-margin: 25px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
@@ -25,6 +25,7 @@
     float: left;
     margin-right: 400px;
 }
+
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
@@ -113,6 +114,10 @@
   border-radius: 20px;
   margin: 10px;
 }
+.HAMBURGER img {
+    display: block; /* Odstraní případné mezery pod obrázkem */
+    margin-top: 20px; /* Přidáme svislou mezeru mezi obrázkem a obsahem nad ním */
+  }
 
 @media (min-width: 1000px) {
   .hamburger-menu {
@@ -314,7 +319,11 @@
     border-radius: 20px;
     background: #000;
     color: #ffffff;
-
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    position: relative;
+    left: 35%
 }
 
   /* OTEVIRACI DOBA */  
@@ -326,9 +335,7 @@
 }
 p{
     padding-top: 20px;
-    font-size: 20px;
 }
-
 
 .calendar-container {
     float: right;
