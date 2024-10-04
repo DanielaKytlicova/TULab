@@ -366,11 +366,17 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    font-size: 14px;
+}
+
+.container {
+  background-color: #ffffff44;
+  border-radius: 20px;
+  margin: 0 20%;
+  padding: 4%;
 
 }
-footer p{
-font-size: 14px;
-  }
+
   
   /* Při rozlišení minimálně 1000px zobrazíme tři sloupce */
   @media (min-width: 1000px) {
