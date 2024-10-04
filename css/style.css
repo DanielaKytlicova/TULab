@@ -154,61 +154,46 @@
 
 /* MENU */
 
+.MENU {
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 0;
+}
+
+.menu {
+  display: flex; /* Flexbox pro zarovnání */
+  justify-content: space-between; /* Zarovná obsah (obrázek vlevo, odkazy vpravo) */
+  align-items: center; /* Vertikální zarovnání na střed */
+  list-style-type: none; /* Odstraníme odrážky seznamu */
+  padding: 0;
+  margin: 0;
+}
+
+.MENU img {
+  width: 110px;
+  height: 60px;
+  padding-left: 20px;
+  flex-shrink: 0; /* Zabrání zmenšování obrázku */
+}
+
 .menu li {
-    display: inline-block;
-    
+  display: inline-block;
+}
 
-    }
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-align: right;
+}
 
-    .MENU {
-        background-color: black;
-        border-radius: 20px;
-        margin: 10px;
-    }
-.MENU img{
-    display: flex;
-    position: absolute;
-    float: left; /* Zarovná obrázek vlevo */
-   /* margin-right: 400px;  Pokud chcete přidat mezery mezi obrázkem a ostatním obsahem */
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+  color: #00f8f8;
+}
 
-}  */
-
-    .menu {
-      
-        margin-left: 500px;
-        color: aliceblue;
-       display: flex; /* Použijeme flexbox pro zarovnání */
-    justify-content: space-between; /* Vytvoří prostor mezi obrázkem a odkazy */
-    align-items: center; /* Vertikální zarovnání na střed */
-    padding: 10px; /* Přidáme padding */
-
-    }
-    
-    
-    .menu a{
-        text-align: right;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        padding: 15px 15px;
-    }
-
-    .menu a:hover,
-    .menu a:focus,
-    .menu a:active {
-        color: #00f8f8;
-    }
-    img {
-        padding-left: 20px;
-        width: 110px;
-        height: 60px;
-        flex-shrink: 0;
-    
-    }
-    .menu img{
-       text-align: left;
-       
-    }
     @media (max-width: 1000px) {
         .menu {
           display: none;
@@ -233,8 +218,8 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 200px;
-    overflow: hidden;
+    height: 500px;
+    overflow: clip;
   }
   
   .carousel {
@@ -328,8 +313,11 @@
     width: 30%;
     position: relative;
     left: 35%
+  }
+.button a{
+  text-decoration: none;
+  color: #ddd;
 }
-
   /* OTEVIRACI DOBA */  
 .oteviracidoba {
     background-color: #dddddd44;
@@ -403,4 +391,84 @@ footer{
   footer a:hover {
     text-decoration: underline;
   }
-  
+
+
+ /* VYBAVENÍ */  
+
+ .laser {
+  background-color: #dddddd44;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  display: flexbox;
+  text-align: left;
+ }
+
+ .laser img {
+  height: 500px;
+  float: right;
+ }
+
+ .tisk {
+  background-color: #dddddd44;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  display: flexbox;
+  text-align: right;
+ }
+ .tisk img {
+  height: 500px;
+  float: left;
+ }
+
+ .vysivani {
+  background-color: #dddddd44;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  display: flexbox;
+  text-align: left;
+ }
+
+ .vysivani img {
+  height: 500px;
+  float: right;
+ }
+
+ .CNC {
+  background-color: #dddddd44;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  display: flexbox;
+  text-align: right;
+ }
+ .CNC img {
+  height: 500px;
+  float: left;
+ }
+
+ .scan {
+  background-color: #dddddd44;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  display: flexbox;
+  text-align: left;
+ }
+
+ .scan img {
+  height: 500px;
+  float: right;
+ }
+ .instruktori {
+  text-align: center;
+ }
+
+
+  /* O NAS - stránka */  
+
+  .onas{
+    margin: 10%;
+  }
