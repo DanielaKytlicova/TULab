@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <style>
+        @font-face {
+            font-family: 'TULMono-Bold';
+            src: url('/fonts/TULMono-Bold.otf') format('woff2'),
+                 url('/fonts/TULMono-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+    
+    
+        body {
+            font-family: 'TULMono-Bold', monospace;
+        }
+    </style>
+
+    <!--  HAMBURGER MENU -->
+
+    <div class="HAMBURGER">
+          <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div><a href="#onas">O NÁS</a></div>
+        <div><a href="/vybaveni">VYBAVENÍ</a></div>
+        <div><a href="#kudyknam">KUDY K NÁM</a></div>
+        <div><a href="#kontakt">KONTAKT</a></div>
+      </nav>
+    </aside>
+
+  <img src="image/TULab-logo.svg" alt="TULab logo">
+</div>
+     <!--  MENU -->
+ <div class="MENU">
+
+    <ul class="menu">
+    <img src="image/TULab-logo.svg" alt="TULab logo">
+        <li><a href="#onas">O NÁS</a></li>
+        <li><a href="#vybaveni">VYBAVENÍ</a></li>
+        <li><a href="#kudyknam">KUDY K NÁM</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="#CZ">CZ</a></li>
+    
+    </div>
+
+
+
+
+{{ content | safe }}
+
+
+
+
+<footer>
+    <p>ADRESA
+        <br/>
+        <br/>    Suterén budovy A
+        <br/>    Hálkova 6
+        <br/>    Liberec 460 01</p>
+    
+    <p>
+     Kontakt
+     <br/>
+     <br/>Mail: <a href="mailto:tulab@tul.cz">tulab@tul.cz</a>
+     <br/>facebook: <a href="https://www.facebook.com/profile.php?id=100083199377110">tulab_official </a>
+     <br/>Instargam:<a href="https://www.instagram.com/tulab_official/">tulab_official</a>
+    </p>
+
+<p>
+    Odpovědné osoby TUL
+        <br/>
+        <br/>Ing. Jan Koprnický, Ph.D.
+        <br/>Ing. Lubomír Slavík, Ph.D.
+        <br/>Ing. Mgr. Markéta Rous
+</p>
+</footer>
+</div> 

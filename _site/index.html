@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TULab</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <style>
+        @font-face {
+            font-family: 'TULMono-Bold';
+            src: url('/fonts/TULMono-Bold.otf') format('woff2'),
+                 url('/fonts/TULMono-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+    
+    
+        body {
+            font-family: 'TULMono-Bold', monospace;
+        }
+    </style>
+
+    <!--  HAMBURGER MENU -->
+
+    <div class="HAMBURGER">
+          <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+    <aside class="sidebar">
+      <nav>
+        <div><a href="#onas">O NÁS</a></div>
+        <div><a href="/vybaveni">VYBAVENÍ</a></div>
+        <div><a href="#kudyknam">KUDY K NÁM</a></div>
+        <div><a href="#kontakt">KONTAKT</a></div>
+      </nav>
+    </aside>
+
+  <img src="image/TULab-logo.svg" alt="TULab logo">
+</div>
+     <!--  MENU -->
+ <div class="MENU">
+
+    <ul class="menu">
+    <img src="image/TULab-logo.svg" alt="TULab logo">
+        <li><a href="#onas">O NÁS</a></li>
+        <li><a href="#vybaveni">VYBAVENÍ</a></li>
+        <li><a href="#kudyknam">KUDY K NÁM</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+        <li><a href="#CZ">CZ</a></li>
+    
+    </div>
+
+
+
+
+
+
+    <!-- Carusell -->
+
+    <div class="carousel-container">
+        <!-- Radio buttons for carousel navigation -->
+        <input type="radio" name="carousel" id="item-1" checked>
+        <input type="radio" name="carousel" id="item-2">
+        <input type="radio" name="carousel" id="item-3">
+        <input type="radio" name="carousel" id="item-4">
+    
+        <!-- Carousel items -->
+        <div class="carousel">
+          <div class="carousel-item" id="carousel-item-1"><img src="image/Carousel2_Kreslicí plátno 1.png"></div>
+          <div class="carousel-item" id="carousel-item-2"><img src="image/Carousel1_Kreslicí plátno 1.png"></div>
+          <div class="carousel-item" id="carousel-item-3"><img src="image/Carousel1_Kreslicí plátno 1.png"></div>
+          <div class="carousel-item" id="carousel-item-4"><img src="image/Carousel1_Kreslicí plátno 1.png"></div>
+        </div>
+    
+        <!-- Carousel navigation buttons -->
+        <div class="nav">
+          <label for="item-1" class="nav-button"></label>
+          <label for="item-2" class="nav-button"></label>
+          <label for="item-3" class="nav-button"></label>
+          <label for="item-4" class="nav-button"></label>
+        </div>
+      </div>
+
+
+ <!-- VYBAVENI -->
+ <div class="VYBAVENI" id="vybavení">
+    <h1>vybavení</h1>
+
+    <img src="image/ikony/3D SKEN.svg" alt="3D scan"> 
+    <img src="image/ikony/LASER.svg" alt="Laser">
+    <img src="image/ikony/3D TISK.svg" alt="3D tisk">
+    <img src="image/ikony/CNC.svg" alt="CNC">
+    <img src="image/ikony/KOMPRESOR.svg" alt="kompresor">
+    <img src="image/ikony/NÁŘADÍ.svg" alt="nařadí">
+    
+    
+    
+    
+        <h3 class="button">CELÝ VÝČET</h3>
+    </div>
+    
+<!-- OTEVIRACI DOBA -->  
+    <div class="oteviracidoba" id="kudyknam">
+    <h1>Otevírací doba a kudy k nám</h1>
+    
+    
+
+    
+    
+    <div class="calendar-container">
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=pk917gap3oon4juh59cuub7icc%40group.calendar.google.com&ctz=Europe%2FPrague&mode=week"
+          style="border: 0;" frameborder="0" scrolling="no"></iframe>
+      </div>
+    
+      <p>
+    Po: 14–18 hod <br>
+    út: 14–18 hod <br>
+    st: 14–18 hod <br>
+    čt: 14–18 hod <br>
+    </p>  
+  <p> Po předchozí domluvě lze navštívit tulab i mimo otevírací dobu.</p> 
+    <h3 class="button">Další informace</h3>
+    </div>
+    
+ <!-- KONTAKT -->  
+  <div class="kontakt">
+    <h1> Kontakt</h1>
+
+    <div class="container">
+      <form method="post" action="" name="contact-form">
+        <h4>Chci odebírat newslatter</h4>
+        <input type="text" name="your-name" placeholder="Jméno a příjmení">
+        <input type="text" name="your-number" placeholder="Telefon">
+        <input type="email" name="your-email" placeholder="Email">
+        <!-- <textarea name="message" rows="7" placeholder="Your Message"></textarea> --> 
+        <input type="submit" value="Odeslat" id="submit">
+      </form>
+    </div>
+  
+    <!-- <script src="Google Sheet.js"></script>  --> 
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+<footer>
+    <p>ADRESA
+        <br/>
+        <br/>    Suterén budovy A
+        <br/>    Hálkova 6
+        <br/>    Liberec 460 01</p>
+    
+    <p>
+     Kontakt
+     <br/>
+     <br/>Mail: <a href="mailto:tulab@tul.cz">tulab@tul.cz</a>
+     <br/>facebook: <a href="https://www.facebook.com/profile.php?id=100083199377110">tulab_official </a>
+     <br/>Instargam:<a href="https://www.instagram.com/tulab_official/">tulab_official</a>
+    </p>
+
+<p>
+    Odpovědné osoby TUL
+        <br/>
+        <br/>Ing. Jan Koprnický, Ph.D.
+        <br/>Ing. Lubomír Slavík, Ph.D.
+        <br/>Ing. Mgr. Markéta Rous
+</p>
+</footer>
+</div> 
