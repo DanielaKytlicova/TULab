@@ -52,7 +52,7 @@
         <li><a href="/#kudyknam">KUDY K NÁM</a></li>
         <li><a href="#kontakt">KONTAKT</a></li>
         <li><a href="#CZ">CZ/ENG</a></li>
-    
+     
     </div>
 
 
@@ -147,20 +147,39 @@
  <!-- KONTAKT -->  
   <div class="kontakt" id="kontakt">
     <h1> Kontakt</h1>
-
-    <div class="container">
+    
+<div class="newslatter">
+    <form name="submit-to-google-sheet">
+      <input name="email" type="email" placeholder="Email" required>
+      <button type="submit">Odeslat</button>
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx_uum_URhgA7qAxCUXkiT-RBg_2iusG30kwuJo_i5SZaWp2ZdepfyDtd2jtFlPSvo/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</div>
+  <!-- <div class="container">
       <form method="post" action="" name="contact-form">
         <h4>Chci odebírat newslatter</h4>
         <input type="text" name="your-name" placeholder="Jméno a příjmení">
         <input type="text" name="your-number" placeholder="Telefon">
         <input type="email" name="your-email" placeholder="Email">
-        <!-- <textarea name="message" rows="7" placeholder="Your Message"></textarea> --> 
+        <textarea name="message" rows="7" placeholder="Your Message"></textarea> 
         <input type="submit" value="Odeslat" id="submit">
       </form>
     </div>
-  
+  --> 
     <!-- <script src="Google Sheet.js"></script>  --> 
 
+    
 
 
 
