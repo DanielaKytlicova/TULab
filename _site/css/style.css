@@ -300,6 +300,10 @@
   }
 
 /* VYBAVENI */
+ul {
+  list-style-type: none; /* Odstraní odrážky */
+  
+}
 
     .VYBAVENI img {
         width: 131.51px;
