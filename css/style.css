@@ -466,6 +466,13 @@ footer{
   text-align: center;
  }
 
+ .person {
+  padding: 50%;
+  margin: 30%;
+  background-color: #000;
+  color: #ddd;
+  text-align: center;
+ }
 
   /* O NAS - stránka */  
 
