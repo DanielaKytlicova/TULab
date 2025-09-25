@@ -174,9 +174,15 @@
   width: 110px;
   height: 60px;
   padding-left: 20px;
-  flex-shrink: 0; /* Zabrání zmenšování obrázku */
 }
 
+@media (max-width: 960px) {
+  img {
+    width: 40%;
+    margin: 3%;
+    padding: 3%;
+  }
+}
 .menu li {
   display: inline-block;
 }
@@ -203,7 +209,8 @@
           left: 0;
           background-color: #333;
           width: 100%;
-        }}
+        }
+}
 
     body{
         background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #bf00b2, #38032c);
@@ -293,6 +300,10 @@
   }
 
 /* VYBAVENI */
+ul {
+  list-style-type: none; /* Odstraní odrážky */
+  
+}
 
     .VYBAVENI img {
         width: 131.51px;
@@ -329,6 +340,14 @@ p{
     padding-top: 20px;
 }
 
+.button-dalsi a{
+  text-decoration: none;
+  color: #ddd;
+  background-color: #000;
+  border-radius: 10%;
+  padding: 1%;
+}
+
 .calendar-container {
     float: right;
     position: relative;
@@ -358,6 +377,35 @@ footer{
     flex-direction: column;
     padding: 20px;
     font-size: 14px;
+}
+
+form{
+  background: #fff;
+  display: flex;
+  width: fit-content;
+  border-radius: 30%;
+  margin: 0 auto; /* Horizontálně vycentruje formulář */
+  
+}
+
+form input {
+border: 0;
+outline: none;
+padding: 10px 20px;
+height: 70px;
+width: 400px;
+font-size: 16px; 
+font-family: TULMono-Bold;
+
+}
+
+form button {
+ background: #000;
+ color: #ddd;
+ border: none;
+ border-radius: 10%;
+ font-family: TULMono-Bold;
+ cursor: pointer;
 }
 
 .container {
