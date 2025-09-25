@@ -441,7 +441,7 @@ form button {
   }
 
 
- /* VYBAVENÍ 
+ /* VYBAVENÍ */ 
 
  .laser {
   background-color: #dddddd44;
@@ -456,7 +456,7 @@ form button {
   height: 500px;
   float: right;
  }
-*/  
+ 
  .tisk {
   background-color: #dddddd44;
   padding: 5%;
@@ -515,7 +515,8 @@ form button {
  }
 
  .person {
-  padding: 50%;
+  width: 33.3%;
+  border-radius: 20px;
   margin: 30%;
   background-color: #000;
   color: #ddd;
