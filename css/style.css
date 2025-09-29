@@ -515,6 +515,8 @@ form button {
  }
 
  .person {
+  display: inline;
+  align-items: stretch;
   width: 33.3%;
   border-radius: 20px;
   margin: 30%;
