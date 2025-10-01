@@ -225,7 +225,7 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 100px;
     overflow: clip;
   }
   
@@ -380,6 +380,7 @@ footer{
 }
 
 form{
+  padding: 10px;
   background: #fff;
   display: flex;
   width: fit-content;
@@ -510,6 +511,7 @@ form button {
   height: 500px;
   float: right;
  }
+ 
  .instruktori {
   text-align: center;
   height: 100%;
