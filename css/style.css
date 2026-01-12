@@ -10,7 +10,7 @@
   --bar-height: 8px;
   --hamburger-gap: 6px;
   --foreground: #ffffff00;
-  --background: rgba(255, 255, 255, 0);
+  --background: #ffffff;
   --hamburger-margin: 25px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
@@ -43,7 +43,7 @@
 
 .hamburger-menu:has(input:checked) {
   --foreground: rgb(0, 0, 0); /* Barva křížku */
-  --background: #33333300;
+  --background: #333333;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
