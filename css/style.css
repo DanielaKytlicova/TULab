@@ -9,8 +9,8 @@
   --bar-width: 60px;
   --bar-height: 8px;
   --hamburger-gap: 6px;
-  --foreground: #ffffffe8;
-  --background: rgb(0, 0, 0);
+  --foreground: #ffffff00;
+  --background: rgba(255, 255, 255, 0);
   --hamburger-margin: 25px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
@@ -43,7 +43,7 @@
 
 .hamburger-menu:has(input:checked) {
   --foreground: rgb(0, 0, 0); /* Barva křížku */
-  --background: #333;
+  --background: #33333300;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
@@ -127,7 +127,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #333;
+    background-color: #33333300;
     width: 100%;
   }
 }
@@ -145,7 +145,7 @@
       position: absolute;
       top: 60px;
       left: 0;
-      background-color: #333;
+      background-color: #33333300;
       width: 100%;
     }
 .HAMBURGER{
@@ -355,6 +355,7 @@ p{
     padding-bottom: 50%; /* Upravte tento poměr podle požadovaného poměru stran iframe */
     height: 0;
     overflow: hidden;
+    border-radius: 6px;
   }
   
   .calendar-container iframe {
@@ -377,6 +378,11 @@ footer{
     flex-direction: column;
     padding: 20px;
     font-size: 14px;
+}
+
+.email{
+border-radius: 6px;
+padding-right: 20px;
 }
 
 form{
